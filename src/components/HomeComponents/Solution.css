@@ -1,0 +1,126 @@
+.solutionBigMain {
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 200px;
+}
+
+.solutionLine {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+}
+
+.solutionMain {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
+  gap: 70px;
+}
+
+.solutionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+.solutionImage {
+  flex: 1;
+}
+
+.solutionContent .sHead {
+  color: #332c5c;
+  font-family: "Nunito", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+}
+.solutionContent .sPara {
+  color: #4c4c4c;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.solutionBox {
+  background-color: #ecfbf6;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.solutionBoxHead {
+  color: #332c5c;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.solutionBoxPara {
+  color: #4c4c4c;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+}
+
+.solutionImageBox {
+  height: 50px;
+  width: 160px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solutionImageBox img {
+  width: 30px;
+}
+
+.solutionBoxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.solutionImageBoxWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.solutionImage img {
+  width: 100%;
+  margin-top: 50%;
+  transform: translateY(-30%);
+}
+
+.snapShotImage img {
+  width: 100%;
+  margin-bottom: 100px;
+  box-shadow: -20px 50px  80px rgba(0, 204, 179, 0.2);
+}
+
+.solutionBtn{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+.solutionContent{
+  margin-bottom: 30px;
+}
+
+.solutionImage img{
+  box-shadow: -20px 50px  80px rgba(0, 204, 179, 0.2);
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .solutionMain {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .solutionBox {
+    flex-direction: column;
+  }
+}

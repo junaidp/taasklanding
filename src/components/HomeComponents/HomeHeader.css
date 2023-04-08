@@ -1,0 +1,220 @@
+.homeHeaderBigMain {
+  background-color: #a0ecd0;
+  position: relative;
+}
+
+.homeHeaderMain {
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 0px;
+}
+
+.headerLine {
+  position: absolute;
+  width: 100%;
+  /* z-index: -1; */
+  opacity: 0.2;
+}
+
+.headerIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.wordBox {
+  height: 40px;
+  width: 40px;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: relative;
+   z-index: 20;
+}
+
+.word {
+  height: 20px;
+  width: 20px;
+}
+
+.traakLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.traak {
+  width: 90px;
+  position: relative;
+  z-index: 20;
+}
+
+.bar {
+  width: 40px;
+  height: 20px;
+}
+
+.headerHeading {
+  color: #11333f;
+  font-family: "Nunito", sans-serif;
+  font-size: 54px;
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+  line-height: 50px;
+}
+
+.headerPara {
+  color: #4c4c4c;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  line-height: 50px;
+  line-height: 30px;
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.homeHeaderContent {
+  text-align: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.homeBtn {
+  background: linear-gradient(180deg, #2e6073 0%, #214b5a 100%);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  height: 40px;
+  width: 90px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  /* margin-left: 50%; */
+  /* transform: translateX(-50%); */
+  /* margin-top: 10px; */
+}
+
+.headerImg {
+  width: 100%;
+  position: relative;
+  top: 100px;
+  margin-bottom: 10px;
+  box-shadow: -20px 50px  80px rgba(0, 204, 179, 0.2);
+
+}
+
+/* The Dialog Box CSS */
+
+.dialogBox {
+  background: linear-gradient(
+    180deg,
+    rgba(46, 96, 115, 0.7) 0%,
+    rgba(33, 75, 90, 0.7) 100%
+  );
+  backdrop-filter: blur(4px);
+}
+
+.dialogBoxHeader {
+  color: #332c5c;
+  font-size: 37px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  padding: 10px 20px;
+}
+
+.dialogBoxTextFieldsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 30px;
+  width: 500px;
+}
+
+.dialogBoxTextField p {
+  color: #152428;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.dialogBoxInput {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #3a606e;
+  padding: 1px 6px;
+  border-radius: 5px;
+  color: #3a606e;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+}
+
+.headerBtnsFlex{
+  display: flex;
+  width: 20%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.contactBtn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 20px;
+}
+
+@media screen and (max-width:900px) {
+  .headerBtnsFlex{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dialogBoxTextFieldsGrid {
+    grid-template-columns: 1fr;
+  }
+  .dialogBoxTextFieldsGrid {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .dialogBoxTextFieldsGrid {
+    width: 250px;
+  }
+}
+
+/*  */
+@media screen and (max-width: 900px) {
+  .headerHeading {
+    font-size: 40px;
+  }
+
+  .headerPara {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .headerHeading {
+    font-size: 30px;
+  }
+
+  .headerPara {
+    font-size: 16px;
+  }
+}
