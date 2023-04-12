@@ -13,21 +13,27 @@ import img6 from "../../assets/nav6.png";
 import img7 from "../../assets/nav7.png";
 import img8 from "../../assets/nav8.png";
 import img9 from "../../assets/nav9.png";
+import { closeHam } from "../../features/appSlice";
+import { useDispatch } from "react-redux";
+import mainLogo from "../../assets/mainLogo.png"
 
 const Navbar = ({ text }) => {
+  let dispatch=useDispatch()
   return (
     <div className="navbarBigMain">
       <div className="navbarMain">
         <div className="navBarIcons">
           <div className="headerIcons">
-            <div className="traakLogo">
+            {/* <div className="traakLogo">
               <div className="wordBox">
                 <img src={Word} className="word" />
               </div>
               <img src={Traak} className="traak" />
-            </div>
-            <img src={bar} className="bar" />
+            </div> */}
+          <img src={mainLogo} className="mainLogo"/>
+            <img src={bar} className="bar" onClick={()=>dispatch(closeHam())} />
           </div>
+
         </div>
 
         <div className="navbarImages">

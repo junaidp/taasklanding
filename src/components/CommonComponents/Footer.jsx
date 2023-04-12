@@ -5,6 +5,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import {openContactForm}  from "../../features/appSlice"
 import { useDispatch } from "react-redux";
+import mainLogo from "../../assets/mainLogo.png"
 
 const Footer = () => {
   let dispatch=useDispatch()
@@ -20,6 +21,7 @@ const Footer = () => {
                 </div>
                 <img src={Traak} className="traak" />
               </div>
+              {/* <img src={mainLogo} className="mainLogo"/> */}
               <p>
                 Helping you manage your customer portfolio tasks more
                 efficiently.

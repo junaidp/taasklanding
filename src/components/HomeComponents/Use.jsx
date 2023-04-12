@@ -2,8 +2,12 @@ import React from "react";
 import "./Use.css";
 import { UseData } from "./data";
 import Line from "../../assets/useLine.png";
+import {openContactForm}  from "../../features/appSlice"
+import { useDispatch } from "react-redux";
+import dotImg from "../../assets/dot.jpg"
 
 const Use = () => {
+  let dispatch=useDispatch()
   return (
     <div>
       <img src={Line} className="useLine" />
@@ -26,8 +30,12 @@ const Use = () => {
                     {item.points.map((text) => {
                       return (
                         <div className="useBullet">
-                          <div className="dot"></div>
-                          <p>{text}</p>
+                          {/* <div className="dot"></div> */}
+                          {/* <div> */}
+                            
+                          <span className="spanDot"></span>
+                          {/* </div> */}
+                          <p className="useText">{text}</p>
                         </div>
                       );
                     })}
@@ -37,7 +45,7 @@ const Use = () => {
             })}
           </div>
         </div>
-        <button className="homeBtnCommon useBtn">Book a Demo</button>
+        <button className="homeBtnCommon useBtn" onClick={()=>dispatch(openContactForm())}>Book a Demo</button>
       </div>
     </div>
   );
