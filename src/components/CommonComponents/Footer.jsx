@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import {openContactForm}  from "../../features/appSlice"
 import { useDispatch } from "react-redux";
 import mainLogo from "../../assets/mainLogo.png"
+import homeLogo from "../../assets/logoHome.png"
 
 const Footer = () => {
   let dispatch=useDispatch()
@@ -16,9 +17,10 @@ const Footer = () => {
           <div className="footerGrid">
             <div className="footerFirst">
               <div className="traakLogo">
-                <div className="wordBox">
+                {/* <div className="wordBox">
                   <img src={Word} className="word" />
-                </div>
+                </div> */}
+                <img src={homeLogo} style={{height:"40px"}}/>
                 <img src={Traak} className="traak" />
               </div>
               {/* <img src={mainLogo} className="mainLogo"/> */}
@@ -56,9 +58,9 @@ const Footer = () => {
                 <Link to="/product">
                   <p>Product Overview</p>
                 </Link>
-                <Link to="/testimonials">
+                {/* <Link to="/testimonials">
                   <p>Customer Testimonials</p>
-                </Link>
+                </Link> */}
                 <Link to="/pricing">
                   <p>Pricing</p>
                 </Link>
