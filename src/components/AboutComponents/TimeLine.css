@@ -79,7 +79,7 @@
   font-size: 22px;
   font-weight: 700;
   font-family: "Nunito", sans-serif;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 .timelineWrapper p {
   color: #63657e;
@@ -87,7 +87,7 @@
   font-weight: 600;
   font-family: "Nunito", sans-serif;
   width: 100%;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 
 /* The Date Styles */
