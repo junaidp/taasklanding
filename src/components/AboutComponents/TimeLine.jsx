@@ -9,12 +9,9 @@ import "./TimeLine.css";
 const TimeLine = () => {
   return (
     <div className="timeLineMain">
-      <h1>Lorem ipsum dolor sit amet</h1>
+      <h1>Our Timeline</h1>
       <p>
-        Aenean diam nunc, commodo ac nisi ut, facilisis lobortis est.
-        Pellentesque sed neque at ipsum congue tincidunt. Curabitur felis sem,
-        pharetra eu eros ac, volutpat vestibulum diam. Aliquam luctus eget
-        sapien ac finibus.
+        Our journey from where it all started and where we aim to be in comming years.
       </p>
 
       <div className="timeline">
@@ -25,49 +22,61 @@ const TimeLine = () => {
         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work costum-line costum-line"
-            date="2021"
+            date="January 2023"
             dateClassName="date1"
             iconClassName="icon1"
             position="right"
           >
             <div className="timelineWrapper">
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p>
-                Aenean diam nunc, commodo ac nisi ut, facilisis lobortis est.
-                Pellentesque sed neque at ipsum congue tincidunt.
-              </p>
+              <h1>Traaak idea was created</h1>
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2022"
+            date="August 2023"
             // iconStyle={{ background: "#C06EF3", color: "#C06EF3" }}
             position="left"
             dateClassName="date2"
             iconClassName="icon2"
           >
             <div className="timelineWrapper">
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p>
-                Aenean diam nunc, commodo ac nisi ut, facilisis lobortis est.
-                Pellentesque sed neque at ipsum congue tincidunt.
-              </p>
+              <h1>Minimum Viable Product (MVP) produced</h1>
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2022"
+            date="Sept 2023"
             // iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             position="right"
             dateClassName="date3"
             iconClassName="icon3"
           >
             <div className="timelineWrapper">
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p>
-                Aenean diam nunc, commodo ac nisi ut, facilisis lobortis est.
-                Pellentesque sed neque at ipsum congue tincidunt.
-              </p>
+              <h1>Short-term Next Steps - Customer Testing, iterations and more iterations</h1>
+            </div>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="February 2024"
+            // iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            position="left"
+            dateClassName="date1"
+            iconClassName="icon1"
+          >
+            <div className="timelineWrapper">
+              <h1>Medium-term next steps- soft launch with early adopting customers</h1>
+            </div>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="July 2024"
+            // iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            position="right"
+            dateClassName="date2"
+            iconClassName="icon2"
+          >
+            <div className="timelineWrapper">
+              <h1>Long-term next steps - full launch and scaling</h1>
             </div>
           </VerticalTimelineElement>
         </VerticalTimeline>

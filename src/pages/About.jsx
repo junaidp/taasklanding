@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/CommonComponents/Navbar";
 import {
-  AboutNumbers,
+  // AboutNumbers,
   AboutContent,
   TimeLine,
-  Companies,
+  // Companies,
 } from "../components/AboutComponents/index";
-import Numbers from "../components/ProductComponents/ProductNumbers";
+// import Numbers from "../components/ProductComponents/ProductNumbers";
 import Footer from "../components/CommonComponents/Footer";
 import "./index.css"
 
@@ -14,10 +14,10 @@ const About = () => {
   return (
     <div  className="pagesWrapper">
       <Navbar text="About Us" />
-      <Numbers />
+      {/* <Numbers /> */}
       <AboutContent />
       <TimeLine />
-      <Companies />
+      {/* <Companies /> */}
       <Footer />
     </div>
   );

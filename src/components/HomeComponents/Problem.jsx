@@ -5,6 +5,7 @@ import group from "../../assets/Group.png";
 import HBar from "../../assets/horizontalBar.png";
 import VBar from "../../assets/verticalBar.png";
 import line from "../../assets/problemLine.png";
+import video from "../../assets/demo_video.mp4"
 
 const Problem = () => {
   return (
@@ -18,7 +19,11 @@ const Problem = () => {
           <img src={VBar} className="vBar" />
         </div>
 
+
         <div className="problemContent">
+        <div>
+        <video src={video} width="600" height="300" controls />
+        </div>
           <h1>The Problem</h1>
           <p>
             Most customer portfolio managers rely on multiple propriety

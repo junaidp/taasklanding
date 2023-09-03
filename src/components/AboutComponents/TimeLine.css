@@ -1,4 +1,5 @@
 .timeLineMain h1 {
+
   color: #332c5c;
   font-family: 700;
   font-family: "Nunito", sans-serif;
@@ -7,6 +8,7 @@
 }
 
 .timeLineMain p {
+
   color: #4c4c4c;
   font-size: 20px;
   font-weight: 400;
@@ -18,12 +20,14 @@
 }
 
 .timeline {
+
   width: 80%;
   margin-left: 50%;
   transform: translateX(-50%);
   padding: 35px 0px;
 }
 .date1 {
+
   color: #c06ef3;
   font-size: 70px;
   font-weight: 700;
@@ -33,11 +37,13 @@
 }
 
 .icon1 {
+
   width: 30px;
   height: 10px;
   background-color: #c06ef3;
 }
 .date2 {
+
   color: #fca61f;
   font-size: 70px;
   font-weight: 700;
@@ -47,12 +53,14 @@
 }
 
 .icon2 {
+
   width: 30px;
   height: 10px;
   background-color: #fca61f;
 }
 
 .date3 {
+
   color: #00ccb3;
   font-size: 70px;
   font-weight: 700;
@@ -62,12 +70,14 @@
 }
 
 .icon3 {
+
   width: 30px;
   height: 10px;
   background-color: #00ccb3;
 }
 
 .timelineWrapper {
+
   background: #ffffff;
   box-shadow: -40px 60px 120px rgba(0, 204, 179, 0.2);
   border-radius: 8px;
@@ -75,6 +85,7 @@
 }
 
 .timelineWrapper h1 {
+
   color: #090f4e;
   font-size: 22px;
   font-weight: 700;
@@ -82,6 +93,7 @@
   /* word-break: break-all; */
 }
 .timelineWrapper p {
+
   color: #63657e;
   font-size: 18px;
   font-weight: 600;
@@ -94,11 +106,12 @@
 .vertical-timeline--two-columns
   .vertical-timeline-element-content
   .vertical-timeline-element-date {
+  
   position: absolute;
   width: 102%;
   left: 124%;
   /* top: -39px; */
-  top: 66px;
+  /* top: 30px; */
   font-size: 16px;
   /* font-size: 3rem; */
   font-size: 2rem;
@@ -107,17 +120,19 @@
 
 /* The Icon Styles */
 .vertical-timeline--two-columns .vertical-timeline-element-icon {
+
   width: 12px;
   height: 12px;
-  left: 52.5%;
+  left: 52%;
   margin-left: -30px;
   /* top: 22px; */
-  top: 107px;
+  top: 50px;
   box-shadow: 0px 0px;
 }
 
 /* Removing the box shadow */
 .vertical-timeline-element-content {
+
   box-shadow: 0px 0px 0px 0px;
 }
 
@@ -125,6 +140,7 @@
   .vertical-timeline--two-columns
     .vertical-timeline-element-content
     .vertical-timeline-element-date {
+    
     /* position: absolute; */
     width: 102%;
     /* left: 124%; */

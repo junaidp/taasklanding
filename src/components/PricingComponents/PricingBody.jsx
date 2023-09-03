@@ -9,16 +9,17 @@ const PricingBody = () => {
     <div className="pricingMain">
       <div className="pricingContent">
         <h1 className="PriHeadMain">
-          Morbi tempor sit amet tellus nec iaculis.
+          Manage your customer portfolio tasks more efficiently!
         </h1>
         <p className="preHeadPara">
-          Nam ut consequat elit. Ut feugiat ex sit amet viverra lobortis. Donec
-          arcu dolor, bibendum non massa in, fermentum mollis libero.
+          Our pricing aims to cater for relevant businesses at various stages and
+          sizes and however if you are uncertain about which package works best
+          for your company then you can try for a limited period, for free.
         </p>
         <div className="pricingBiling">
           <p>Bill Monthly</p>
           <img src={swit} />
-          <p>Bill Anually</p>
+          <p>Bill Annually (Annual with 10% discount)</p>
         </div>
       </div>
       <div className="pricingCards">

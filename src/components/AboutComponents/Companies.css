@@ -1,4 +1,5 @@
 .companyMain h1 {
+  visibility: hidden;
   color: #332c5c;
   font-family: 700;
   font-family: "Nunito", sans-serif;
@@ -7,11 +8,13 @@
 }
 
 .companyMain{
+  visibility: hidden;
   padding: 40px 0px;
 }
 
 .companyMain p {
   color: #4c4c4c;
+  visibility: hidden;
   font-size: 20px;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
