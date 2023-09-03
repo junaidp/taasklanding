@@ -14,7 +14,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
     emailjs
       .sendForm("service_rbsuhse", "template_m38uyjv", e.target, "nLSPfTxHc9lqKP_hy")
       .then(
