@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import { Pricing } from "./data";
 import tick from "../../assets/tick.png";
 import swit from "../../assets/switch.png";
+import { Switch } from "antd";
 
 const PricingBody = () => {
+  const [toggle, setToggle] = useState(true);
+
+  const toggler = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className="pricingMain">
       <div className="pricingContent">
@@ -18,48 +25,45 @@ const PricingBody = () => {
         </p>
         <div className="pricingBiling">
           <p>Bill Monthly</p>
-          <img src={swit} />
+          <Switch onClick={toggler} />
           <p>Bill Annually (Annual with 10% discount)</p>
         </div>
       </div>
       <div className="pricingCards">
-        {Pricing.map((item) => {
-          return (
-            <div className="pricingCard">
-              <div className="pricingCardFlexFirst">
-                <div>
-                  <h1 className="pricingCardHead">{item.head}</h1>
-                  <p className="pricingCardPara">{item.para}</p>
-                </div>
-                <div className="pricingAmountFlex">
-                  <h1 className="pricingCardAmount">{item.amount}</h1>
-                  <p className="pricingCardTime">{item.time}</p>
-                </div>
-              </div>
-
-              <div className="pricingLine"></div>
-
+        {Pricing.map((item, index) => (
+          <div className="pricingCard" key={index}>
+            <div className="pricingCardFlexFirst">
               <div>
-                {item.content.map((text) => {
-                  return (
-                    <div className="pricingTickFlex">
-                      <div className="PritickBox">
-                        <img src={tick} />
-                      </div>
-                      <p>{text}</p>
-                    </div>
-                  );
-                })}
+                <h1 className="pricingCardHead">{item.head}</h1>
+                <p className="pricingCardPara">{item.para}</p>
               </div>
-
-              <button
-                className={`${item.dark ? "activeBtnPricing" : "pricingBtn"}`}
-              >
-                {item.btn}
-              </button>
+              <div className="pricingAmountFlex">
+                <h1 className="pricingCardAmount">
+                  {toggle ? item.amount.monthly : item.amount.annual}
+                </h1>
+                <p className="pricingCardTime">{item.time}</p>
+              </div>
             </div>
-          );
-        })}
+            <div className="pricingLine"></div>
+            <div>
+              {item.content.map((text, subIndex) => (
+                <div className="pricingTickFlex" key={subIndex}>
+                  <div className="PritickBox">
+                    <img src={tick} alt="tick" />
+                  </div>
+                  <p>{text}</p>
+                </div>
+              ))}
+            </div>
+            <button
+              className={`${
+                item.dark ? "activeBtnPricing" : "pricingBtn"
+              } ${toggle ? "customTrueStyle" : ""}`}
+            >
+              {item.btn}
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );

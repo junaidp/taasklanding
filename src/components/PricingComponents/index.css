@@ -115,6 +115,13 @@
   margin-top: 10px;
 }
 
+:where(.css-dev-only-do-not-override-nnuwmp).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: #90ebca;
+}
+.ant-switch.ant-switch-checked {
+  background: #90ebca;
+}
+
 .PritickBox {
   width: 30px;
   height: 30px;
@@ -172,6 +179,13 @@
   color: #2c2c2c;
 }
 
+.CTA-Bottom {
+  text-align: center;
+  font-size: 22px;
+  margin-top: -40px;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 1000px) {
   .pricingContent {
     width: 80%;
@@ -191,3 +205,4 @@
     grid-template-columns: 1fr;
   }
 }
+

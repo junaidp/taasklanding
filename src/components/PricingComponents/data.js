@@ -2,22 +2,27 @@ const Pricing = [
   {
     head: "Basic",
     para: "Manage your customer tasks in a structured manner.",
-    amount: "Free for 6 months",
-    time: "(then $50 p/m) and $540 if annual is selected.",
+    amount: {
+      monthly: "Free for 1 Month, then $50 P/M",
+      annual: "Free for 1 Month, then $540 P/A",
+    },
     content: [
-      "Up to 50 customer portfolio size",
+      "Up to 50 customer portfolio size", 
       "Up to 3 users",
       "Basic task and project features",
       "Up to 500 GB data limit",
       "Avaiable Support",
     ],
     dark: false,
-    btn: "Try for Free",
+    btn: "Start 1 Month Free Trial",
   },
   {
     head: "Advanced",
     para: "Enhance your customer task productivity with all tools in one place.",
-    amount: "$120 p/m and $1296 if annual is selected",
+    amount: {
+      monthly: "$120 P/M",
+      annual: "$1269 P/A",
+    },
     content: [
       "Up to 250 customer portfolio size",
       "Up to 5 users",
@@ -27,12 +32,15 @@ const Pricing = [
       "Avaiable Support",
     ],
     dark: true,
-    btn: "Start 14 Days Free Trial",
+    btn: "Start 1 Month Free Trial",
   },
   {
     head: "Professional",
     para: "Maximise productivity for high volume customer portfolio tasks and projects.",
-    amount: "$250 p/m and $2700 if annual is selected.",
+    amount: {
+      monthly: "$250 P/M",
+      annual: "$2700 P/A",
+    },
     content: [
       "Up to 500 customer portfolio size",
       "Up to 25 Users",
@@ -42,8 +50,7 @@ const Pricing = [
       "Dedicated Support Team",
     ],
     dark: false,
-    btn: "Start 14 Days Free Trial",
+    btn: "Start 1 Month Free Trial",
   },
 ];
-
 export { Pricing };
