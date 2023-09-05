@@ -65,6 +65,7 @@ const PricingBody = () => {
           </div>
         ))}
       </div>
+      <h3 className="CTA-Bottom">Please contact us to discuss bespoke pricing needs</h3>
     </div>
   );
 };
