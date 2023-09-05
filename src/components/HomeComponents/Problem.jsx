@@ -22,7 +22,7 @@ const Problem = () => {
 
         <div className="problemContent">
         <div>
-        <video src={video} width="600" height="300" controls />
+        <video className="demo-video" src={video} width="600" height="300" controls />
         </div>
           <h1>The Problem</h1>
           <p>
