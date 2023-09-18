@@ -71,7 +71,7 @@ let UseData = [
       "Relationship teams",
       "Existing CRM is not post-sale focused.",
       "Managing some customer or work-related tasks with spreadsheets",
-      "Ability to integrate to integrate existing platforms.",
+      "Ability to integrate existing platforms.",
     ],
   },
   {
@@ -80,7 +80,7 @@ let UseData = [
       "Customer success teams",
       "Relationship management teams",
       "Account management teams",
-      "Existing CRM is not post-sale focused focused ",
+      "Existing CRM is not post-sale focused",
       "Managing customer activity on multiple platforms",
       "Managing some customer or work-related tasks with spreadsheets",
       "Ability to integrate existing platforms.",

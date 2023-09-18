@@ -16,7 +16,7 @@ const Use = () => {
           <div className="useBigContent">
             <h1 className="useBigHead">Who can use Traaak? </h1>
             <p className="useBigPara">
-              Track can be used by anyone working in a business-to-business
+              Track can be used by anyone working in a small and medium scale business-to-business
               entity, manages a portfolio of customers and performs activities
               relating to the post sales customer lifecycle.{" "}
             </p>
