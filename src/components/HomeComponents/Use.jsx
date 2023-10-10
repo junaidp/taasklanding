@@ -2,12 +2,12 @@ import React from "react";
 import "./Use.css";
 import { UseData } from "./data";
 import Line from "../../assets/useLine.png";
-import {openContactForm}  from "../../features/appSlice"
+import { openContactForm } from "../../features/appSlice";
 import { useDispatch } from "react-redux";
-import dotImg from "../../assets/dot.jpg"
+import dotImg from "../../assets/dot.jpg";
 
 const Use = () => {
-  let dispatch=useDispatch()
+  let dispatch = useDispatch();
   return (
     <div>
       <img src={Line} className="useLine" />
@@ -16,9 +16,9 @@ const Use = () => {
           <div className="useBigContent">
             <h1 className="useBigHead">Who can use Traaak? </h1>
             <p className="useBigPara">
-              Track can be used by anyone working in a small and medium scale business-to-business
-              entity, manages a portfolio of customers and performs activities
-              relating to the post sales customer lifecycle.{" "}
+              Track can be used by anyone working in a small and medium scale
+              business-to-business entity, manages a portfolio of customers and
+              performs any activity in the customer end-to-end lifecyle.{" "}
             </p>
           </div>
           <div className="useBoxes">
@@ -32,7 +32,7 @@ const Use = () => {
                         <div className="useBullet">
                           {/* <div className="dot"></div> */}
                           {/* <div> */}
-                            
+
                           <span className="spanDot"></span>
                           {/* </div> */}
                           <p className="useText">{text}</p>
@@ -45,7 +45,12 @@ const Use = () => {
             })}
           </div>
         </div>
-        <button className="homeBtnCommon useBtn" onClick={()=>dispatch(openContactForm())}>Book a Demo</button>
+        <button
+          className="homeBtnCommon useBtn"
+          onClick={() => dispatch(openContactForm())}
+        >
+          Book a Demo
+        </button>
       </div>
     </div>
   );

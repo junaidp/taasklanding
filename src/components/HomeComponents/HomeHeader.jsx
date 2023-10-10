@@ -5,52 +5,53 @@ import Word from "../../assets/T.png";
 import HeaderImg from "../../assets/headerImg.png";
 import line from "../../assets/headerLine.png";
 import Contact from "./ContactForm";
-import {openContactForm}  from "../../features/appSlice"
+import { openContactForm } from "../../features/appSlice";
 import { useDispatch } from "react-redux";
-import {openHam,closeHam}  from "../../features/appSlice"
+import { openHam, closeHam } from "../../features/appSlice";
 
-import mainLogo from "../../assets/mainLogo.png"
-import homeLogo from "../../assets/logoHome.png"
+import mainLogo from "../../assets/mainLogo.png";
+import homeLogo from "../../assets/logoHome.png";
 import Traak from "../../assets/Traaak.png";
 
 const HomeHeader = () => {
-  let dispatch=useDispatch()
-  function openTraaak(){
-    window.open("https://taaskclient.herokuapp.com/", '_blank')
+  let dispatch = useDispatch();
+  function openTraaak() {
+    window.open("https://taaskclient.herokuapp.com/", "_blank");
   }
   return (
     <div className="homeHeaderBigMain">
-      <Contact/>
+      <Contact />
       <img src={line} className="headerLine" />
       <div className="homeHeaderMain">
         <div className="headerIcons">
           <div className="traakLogo">
-            <img src={homeLogo} style={{height:"40px"}}/>
+            <img src={homeLogo} style={{ height: "40px" }} />
             <img src={Traak} className="traak" />
           </div>
-          <img src={bar} className="bar" onClick={()=>dispatch(closeHam())}/>
+          <img src={bar} className="bar" onClick={() => dispatch(closeHam())} />
         </div>
 
         <div className="homeHeaderContent">
           <h1 className="headerHeading">
-            Create and manage tasks for your portfolio of customers without the
-            complexities.
+            CRM platform for Business to Business (B2B) customers with focus on
+            task management
           </h1>
           <p className="headerPara">
-            Customer portfolio management platform for success, account
-            management, relationship management, customer service teams. Keep
-            track of your customer activities, stay organised and never miss
-            what is important.{" "}
+            Keep track of your customer activities, stay organised and never
+            miss what is important.{" "}
           </p>
         </div>
 
         <div className="headerBtnsFlex">
-        <button className="homeBtn" onClick={()=>dispatch(openContactForm())}>
-          Book a Demo
-        </button>
-        <button className="homeBtn" onClick={openTraaak}>
-          Solution
-        </button>
+          <button
+            className="homeBtn"
+            onClick={() => dispatch(openContactForm())}
+          >
+            Book a Demo
+          </button>
+          <button className="homeBtn" onClick={openTraaak}>
+            Solution
+          </button>
         </div>
 
         <div>

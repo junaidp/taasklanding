@@ -26,7 +26,7 @@ let solutionData = [
 
 let compare = [
   {
-    head: "Typical SaaS CRM",
+    head: "Typical CRM",
     img: c1,
     content: [
       "Often sales focused ",
