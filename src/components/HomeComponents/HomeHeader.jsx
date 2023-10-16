@@ -33,8 +33,8 @@ const HomeHeader = () => {
 
         <div className="homeHeaderContent">
           <h1 className="headerHeading">
-            CRM platform for Business to Business (B2B) customers with focus on
-            task management
+            CRM platform with focus on task and document management for B2B
+            companies
           </h1>
           <p className="headerPara">
             Keep track of your customer activities, stay organised and never
