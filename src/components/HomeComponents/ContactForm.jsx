@@ -1,32 +1,90 @@
-import React, { useState } from "react";
+import React from "react";
 import Dialog from "@mui/material/Dialog";
 import { useSelector, useDispatch } from "react-redux";
 import { closeContactForm } from "../../features/appSlice";
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  const form = React.useRef();
   const dispatch = useDispatch();
   const { contactForm } = useSelector((state) => state.store);
 
+  let [data, setData] = React.useState({
+    firstName: "",
+    lastName: "",
+    message: "",
+    email: "",
+  });
+
   const handleClose = () => {
     dispatch(closeContactForm());
+    setData({
+      firstName: "",
+      lastName: "",
+      message: "",
+      email: "",
+    });
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    
-    emailjs
-      .sendForm("service_rbsuhse", "template_m38uyjv", e.target, "nLSPfTxHc9lqKP_hy")
-      .then(
-        (result) => {
-          console.log("Email sent successfully:", result.text);
-          handleClose(); // Close the dialog after a successful email submission
-        },
-        (error) => {
-          console.error("Email sending failed:", error.text);
-        }
-      );
+
+    if (!data?.firstName || !data?.lastName || !data?.message || !data?.email) {
+      toast.error("Please provide all the fields!", {
+        position: toast.POSITION.TOP_LEFT,
+      });
+    }
+
+    if (
+      data?.firstName !== "" &&
+      data?.lastName !== "" &&
+      data?.message !== "" &&
+      data?.email !== ""
+    ) {
+      emailjs
+        .sendForm(
+          "service_dnq3a7r",
+          "template_55loyxb",
+          form.current,
+          "0Q_Cw_77BwGKK2tWn"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            dispatch(closeContactForm());
+            toast.success(
+              "Thank you for expressing interest in our product! We’re thrilled to provide you with a personalised demo. Our team will be in touch shortly to schedule a demonstration tailored to your needs. Stay tuned",
+              {
+                position: toast.POSITION.TOP_LEFT,
+              }
+            );
+            setData({
+              firstName: "",
+              lastName: "",
+              message: "",
+              email: "",
+            });
+          },
+          (error) => {
+            console.log(error.text);
+            toast.error("Something Went Wraong While Sending the Email !", {
+              position: toast.POSITION.TOP_LEFT,
+            });
+          }
+        );
+    }
   };
+
+  function handleChange(e) {
+    setData((pre) => {
+      return {
+        ...pre,
+        [e.target.name]: e.target.value,
+      };
+    });
+  }
 
   return (
     <div>
@@ -41,7 +99,13 @@ export default function Contact() {
           <h1 id="alert-dialog-title" className="dialogBoxHeader">
             Contact Us
           </h1>
-          <form onSubmit={sendEmail}>
+          <p className="formMessage">
+            Thank you for expressing interest in our product! We’re thrilled to
+            provide you with a personalised demo. Our team will be in touch
+            shortly to schedule a demonstration tailored to your needs. Stay
+            tuned
+          </p>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="dialogBoxTextFieldsGrid">
               <div className="dialogBoxTextField">
                 <p>First Name</p>
@@ -50,6 +114,8 @@ export default function Contact() {
                   name="firstName"
                   placeholder="John"
                   className="dialogBoxInput"
+                  value={data?.firstName}
+                  onChange={handleChange}
                 />
               </div>
               <div className="dialogBoxTextField">
@@ -59,6 +125,8 @@ export default function Contact() {
                   name="lastName"
                   placeholder="Doe"
                   className="dialogBoxInput"
+                  value={data?.lastName}
+                  onChange={handleChange}
                 />
               </div>
               <div className="dialogBoxTextField">
@@ -68,15 +136,19 @@ export default function Contact() {
                   name="email"
                   placeholder="johndoe@gmail.com"
                   className="dialogBoxInput"
+                  value={data?.email}
+                  onChange={handleChange}
                 />
               </div>
               <div className="dialogBoxTextField">
                 <p>Number</p>
                 <input
                   type="text"
-                  name="number"
+                  name="message"
                   placeholder="123 456 7890"
                   className="dialogBoxInput"
+                  value={data?.message}
+                  onChange={handleChange}
                 />
               </div>
             </div>

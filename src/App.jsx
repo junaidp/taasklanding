@@ -7,14 +7,17 @@ import {
   Product,
 } from "./pages/index";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Sidebar from "./components/CommonComponents/Sidebar"
-import "./App.css"
+import Sidebar from "./components/CommonComponents/Sidebar";
+import "./App.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
     <div style={{ overflowX: "hidden" }} className="appMain">
+      <ToastContainer />
       <BrowserRouter>
-      <Sidebar/>
+        <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -29,4 +32,3 @@ const App = () => {
 };
 
 export default App;
-
