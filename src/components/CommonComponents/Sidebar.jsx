@@ -63,7 +63,7 @@ const Navbar = () => {
                 About Us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className="links fancy-link"
                 onClick={() => dispatch(openHam())}
@@ -71,7 +71,7 @@ const Navbar = () => {
               >
                 Products
               </Link>
-            </li>
+            </li> */}
 
             {/*  */}
 
@@ -84,7 +84,7 @@ const Navbar = () => {
                 Testimonials
               </Link>
             </li> */}
-            <li>
+            {/* <li>
               <Link
                 className="fancy-link links"
                 to="/blog"
@@ -92,7 +92,7 @@ const Navbar = () => {
               >
                 Blogs
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link className="fancy-link links" to="/" onClick={contact}>
                 Contact Us
