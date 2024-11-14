@@ -55,9 +55,9 @@ const Footer = () => {
                 <h1>Product</h1>
               </div>
               <div className="footerParas">
-                <Link to="/product">
+                {/* <Link to="/product">
                   <p>Product Overview</p>
-                </Link>
+                </Link> */}
                 {/* <Link to="/testimonials">
                   <p>Customer Testimonials</p>
                 </Link> */}
