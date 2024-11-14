@@ -3,13 +3,13 @@ import Word from "../../assets/T.png";
 import Traak from "../../assets/Traaak.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import {openContactForm}  from "../../features/appSlice"
+import { openContactForm } from "../../features/appSlice";
 import { useDispatch } from "react-redux";
-import mainLogo from "../../assets/mainLogo.png"
-import homeLogo from "../../assets/logoHome.png"
+import mainLogo from "../../assets/mainLogo.png";
+import homeLogo from "../../assets/logoHome.png";
 
 const Footer = () => {
-  let dispatch=useDispatch()
+  let dispatch = useDispatch();
   return (
     <div>
       <div className="footerBigMain">
@@ -20,7 +20,7 @@ const Footer = () => {
                 {/* <div className="wordBox">
                   <img src={Word} className="word" />
                 </div> */}
-                <img src={homeLogo} style={{height:"40px"}}/>
+                <img src={homeLogo} style={{ height: "40px" }} />
                 <img src={Traak} className="traak" />
               </div>
               {/* <img src={mainLogo} className="mainLogo"/> */}
@@ -38,13 +38,13 @@ const Footer = () => {
                 <Link to="/">
                   <p>Home</p>
                 </Link>
-                <Link to="/blog">
+                {/* <Link to="/blog">
                   <p>Blogs</p>
-                </Link>
+                </Link> */}
                 <Link to="/about">
                   <p>About Us</p>
                 </Link>
-                <Link to="/"onClick={()=>dispatch(openContactForm())}>
+                <Link to="/" onClick={() => dispatch(openContactForm())}>
                   <p>Contact Us</p>
                 </Link>
               </div>
