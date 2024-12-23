@@ -16,7 +16,7 @@ import Traak from "../../assets/Traaak.png";
 const HomeHeader = () => {
   let dispatch = useDispatch();
   function openTraaak() {
-    window.open("https://taaskclient.herokuapp.com/", "_blank");
+    window.open("https://taask-ten.vercel.app/login", "_blank");
   }
   return (
     <div className="homeHeaderBigMain">
