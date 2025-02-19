@@ -40,7 +40,7 @@ const TimeLine = () => {
             iconClassName="icon2"
           >
             <div className="timelineWrapper">
-              <h1>Minimum Viable Product (MVP) produced</h1>
+              <h1>/ Prototype Minimum Viable Product (MVP) produced</h1>
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -52,12 +52,12 @@ const TimeLine = () => {
             iconClassName="icon3"
           >
             <div className="timelineWrapper">
-              <h1>Short-term Next Steps - Customer Testing, iterations and more iterations</h1>
+              <h1>Short-Term Next Steps - Testing and iterations.</h1>
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="February 2024"
+            date="Q3 2025"
             // iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             position="left"
             dateClassName="date1"
@@ -69,7 +69,7 @@ const TimeLine = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="July 2024"
+            date="July Q1 2026"
             // iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             position="right"
             dateClassName="date2"
