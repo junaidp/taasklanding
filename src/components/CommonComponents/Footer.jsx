@@ -45,7 +45,7 @@ const Footer = () => {
                   <p>About Us</p>
                 </Link>
                 <Link to="/" onClick={() => dispatch(openContactForm())}>
-                  <p>Contact Us</p>
+                  <p>Schedule a Demo</p>
                 </Link>
               </div>
             </div>

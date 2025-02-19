@@ -95,7 +95,7 @@ const Navbar = () => {
             </li> */}
             <li>
               <Link className="fancy-link links" to="/" onClick={contact}>
-                Contact Us
+              Schedule a Demo
               </Link>
             </li>
           </ul>

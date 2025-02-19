@@ -97,7 +97,7 @@ export default function Contact() {
       >
         <div style={{ background: "#F4FFFB" }}>
           <h1 id="alert-dialog-title" className="dialogBoxHeader">
-            Contact Us
+          Schedule a Demo
           </h1>
           <p className="formMessage">
             Thank you for expressing interest in our product! We’re thrilled to

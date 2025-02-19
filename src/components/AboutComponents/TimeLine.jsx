@@ -11,7 +11,8 @@ const TimeLine = () => {
     <div className="timeLineMain">
       <h1>Our Timeline</h1>
       <p>
-        Our journey from where it all started and where we aim to be in comming years.
+        Our journey from where it all started and where we aim to be in coming
+        years.
       </p>
 
       <div className="timeline">
@@ -64,7 +65,10 @@ const TimeLine = () => {
             iconClassName="icon1"
           >
             <div className="timelineWrapper">
-              <h1>Medium-term next steps- soft launch with early adopting customers</h1>
+              <h1>
+                Medium-term next steps- soft launch with early adopting
+                customers
+              </h1>
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
