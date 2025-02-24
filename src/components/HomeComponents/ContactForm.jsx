@@ -45,10 +45,10 @@ export default function Contact() {
     ) {
       emailjs
         .sendForm(
-          "service_dnq3a7r",
-          "template_55loyxb",
+          "service_zspa77n",
+          "template_2onamqa",
           form.current,
-          "0Q_Cw_77BwGKK2tWn"
+          "guqWd-UO_t0HDbCaI"
         )
         .then(
           (result) => {
@@ -141,11 +141,10 @@ export default function Contact() {
                 />
               </div>
               <div className="dialogBoxTextField">
-                <p>Number</p>
+                <p>Message</p>
                 <input
                   type="text"
                   name="message"
-                  placeholder="123 456 7890"
                   className="dialogBoxInput"
                   value={data?.message}
                   onChange={handleChange}
